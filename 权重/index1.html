@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        font-family: "Courier New", Courier, monospace;
+      }
+      body .Tra {
+        /* 11 */
+      }
+      .Trap {
+        /* 10 */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        权重位：
+            id：0100
+            class,类属性值：0010
+            标签，伪元素：0001
+            * ：0000
+            行内样式：1000
+            继承：NULL
+            * > 继承
+
+    后出现 > 先出现 !important 提升优先级 -->
+    <div class="Tra"></div>
+  </body>
+</html>
