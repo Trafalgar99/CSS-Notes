@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* div{
+            height: 900px;
+            border: solid 1px red;
+        } */
+      /* 对目标锚点进行控制   */
+      /* div:target{
+            color: red;
+        } */
+      /* 全部控制 */
+      :root {
+        color: red;
+      }
+      /* 空选择器 */
+      /* 对没有元素的li操作 */
+      li:empty {
+        display: none;
+      }
+      /* 首尾伪类选择器 */
+      article :first-child {
+        /* article后代第一个孩子 */
+      }
+      article h1:first-child {
+        /* article后代h1并且是第一个 */
+      }
+      article h1:first-of-type {
+        /* 选择第一个h1 */
+      }
+      article h1:last-child {
+        /* h1并且时最后一个 */
+      }
+      article h1:last-of-type {
+        /* 最后一个h1 */
+      }
+      article :only-child {
+        /* 唯一的子元素 */
+      }
+      article > h1:only-of-type {
+        /* article的子元素唯一的h1 */
+      }
+      article :nth-child(1) {
+        /* article的第一个子元素 */
+      }
+      article :nth-child(n) {
+        /* n:0~unlimitation */
+      }
+      article :nth-child(2n) {
+        /* 2n-1 2n even odd */
+        /* -n+2：前两个
+                n+2：第二个开始    
+            */
+
+        /* nth-of-type同 */
+      }
+      article li:nth-last-child(1) {
+        /* 从后往前 */
+      }
+      main > ul li:nth-child(-n + 3):not(:nth-child(2)) {
+        /* 前三个排除第二个 */
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>Trafal</li>
+      <li></li>
+    </ul>
+    <a href="#tra1"></a>
+    <div></div>
+    <div>dfsdfsdfsdf</div>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 属性选择器 */
+      /* h1中有title属性的 h1[title] */
+      /* h1既有title又有id */
+      /* h1[title][id]{
+            color: seagreen;
+        } */
+      /* 对属性值的约束 */
+      /* h1[title="trtr"]{
+            color: silver;
+        } */
+      /* title以tr开始的 $->以...结束的*/
+      /* h1[title^="tr"]{
+            color: snow;
+        } */
+      /* 对内容的控制 */
+      h1[title*="com"] {
+        /* title内容中有com */
+      }
+      h1[title~="Trafal"] {
+        /* 选择独立的Trafal */
+      }
+      h1[title|="asdfa"] {
+        /* 以。。。开始或者用-连接 */
+      }
+    </style>
+  </head>
+  <body>
+    <h1 title id>TRAfal</h1>
+    <h1 title="trtr">TRARARA</h1>
+  </body>
+</html>

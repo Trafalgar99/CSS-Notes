@@ -1,0 +1,12 @@
+/* 使用css的方式 */
+
+/* 外部引入 */
+body {
+  background: red;
+  /* 语法错误会被忽略 */
+}
+
+/* 引入外部样式 */
+@import url("xxxx");
+
+/* 使用less */
