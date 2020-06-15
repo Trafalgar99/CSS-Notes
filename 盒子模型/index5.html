@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 300px;
+        height: 300px;
+        border: solid 3px #6cf;
+        padding: 30px;
+        /* min-width min-height max-width max-height */
+      }
+      div > img {
+        /* max-width: 90%;不超过继承的90%
+            min-width: 60%;不低于继承的60% */
+      }
+      main{
+          width: 100vw;
+          height: 100px;
+          background: #6cf;
+
+        /* 宽度随最大的内容适应 */
+          width: max-content; min-content
+
+      }
+      div{
+          background: #000;
+          /* 高度自动撑满父级元素 */
+          /* height: -webkit-fill-availale; */
+          /* 宽度自动撑满父级元素 */
+          /* width: -webkit-fill-available; */
+            /* 宽度随内容适应 */
+          /* width: fit-content; */
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div>
+        <img src="##" alt="" />
+      </div>
+    </main>
+  </body>
+</html>
