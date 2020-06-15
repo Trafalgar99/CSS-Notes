@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      article {
+        height: 150px;
+        /* background: linear-gradient(90deg,red, 50%,green);//设置阈值 */
+
+        /* 重复渐变 */
+        background: repeating-linear-gradient(
+          90deg,
+          blue,
+          25px,
+          yellow 25px,
+          25px,
+          red 50px
+        );
+      }
+      aside {
+        height: 200px;
+        width: 200px;
+        background: repeating-radial-gradient(100px, 100px, red, yellow 25px);
+      }
+    </style>
+  </head>
+  <body>
+    <aside></aside>
+    <article>
+      <div>
+        Trafal
+      </div>
+    </article>
+  </body>
+</html>
