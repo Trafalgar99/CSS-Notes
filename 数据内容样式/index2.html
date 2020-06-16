@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 细线无边框表格样式 */
+      table {
+        border: none;
+        border-collapse: collapse;
+      }
+      table thead {
+        background: #6cf;
+        /* border: 1px solid red; */
+      }
+      table td {
+        border: none;
+        border-right: solid 1px #ddd;
+        border-top: solid 1px #ddd;
+        padding: 10px;
+      }
+      table td:last-child {
+        border-right: none;
+      }
+      table tr:last-child td {
+        border-bottom: solid 1px #ddd;
+      }
+      table tr:hover {
+        background-color: red;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <table border="1">
+      <caption>
+        课程介绍
+      </caption>
+      <thead>
+        <tr>
+          <td>标号</td>
+          <td>标题</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Trafa</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>2</td>
+          <td>frank</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

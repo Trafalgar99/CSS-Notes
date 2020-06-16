@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="1.css" /> -->
+    <style>
+      table caption {
+        background: red;
+        color: #fff;
+        border: solid 1px #ddd;
+        /* 标题位置 */
+        caption-side: bottom;
+      }
+      /* 内容对齐 */
+      table tr td {
+        height: 100px;
+        text-align: center;
+        /* 垂直对齐方式 */
+        /* vertical-align: top; */
+        vertical-align: middle;
+      }
+
+      /* 为表格设置颜色 */
+      /* table{
+            background: #6cf;
+            为表格加背景
+            background: url(##);
+
+        }
+        table tbody tr:first-child{
+            background: #ddd;
+        }
+        table tr td{
+            background: #111;
+        } */
+
+      /* 隔行变色 */
+      /* table tbody tr:nth-child(even){
+            background: red;
+            color: royalblue;
+        } */
+      /* 单元格间距 */
+      /* table{
+            border-spacing:0 ;
+            border-collapse: collapse;//合并边框
+            empty-cells: hide; //隐藏空单元格
+        } */
+    </style>
+  </head>
+  <body>
+    <!-- <article class="table">
+        
+      <section>
+        <ul>
+          <li>编号</li>
+          <li>标题</li>
+        </ul>
+      </section>
+      <section>
+        <ul>
+          <li>1</li>
+          <li>Trafal</li>
+        </ul>
+      </section>
+      <section>
+        <ul>
+          <li>2</li>
+          <li>frank</li>
+        </ul>
+      </section>
+    </article> -->
+    <table border="1">
+      <thead>
+        <caption>
+          课程介绍
+        </caption>
+        <tr>
+          <td>标号</td>
+          <td>标题</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Trafa</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>2</td>
+          <td>frank</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 伪元素追加属性 */
+      h2 {
+        position: relative;
+        cursor: pointer;
+      }
+      h2:hover::after {
+        /* content: ".com"; */
+        /* content: attr(data-link);//读取属性 */
+        color: royalblue;
+        background: salmon;
+        padding: 10px;
+        box-shadow: 0 0 5px black;
+        position: absolute;
+        left: 0;
+        bottom: -30px;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- data-xxx自定义属性 -->
+    <h2 data-link="Trafal.com">Trafal</h2>
+  </body>
+</html>
