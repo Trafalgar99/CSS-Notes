@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      main {
+        border: solid 1px black;
+        /* 子元素浮动后，父元素就感知不到其存在 */
+        height: 220px;
+        width: 600px;
+        margin: 0 auto;
+        /* 浮动元素无法逾越父元素的内边框 */
+        padding: 20px;
+      }
+      div {
+        /* 文档流 
+                block
+                inline
+            */
+        width: 200px;
+        height: 200px;
+        border: solid 1px red;
+        box-sizing: border-box;
+      }
+      div:nth-of-type(1) {
+        border: solid 1px red;
+        /* float: left; */
+      }
+      div:nth-of-type(2) {
+        /* 浮动会使元素的空间位消失 */
+        background: blue;
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div></div>
+      <div></div>
+    </main>
+  </body>
+</html>

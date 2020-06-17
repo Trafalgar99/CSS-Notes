@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 清除浮动 */
+      div {
+        width: 200px;
+        height: 200px;
+      }
+      div.red {
+        border: solid 2px red;
+        float: left;
+      }
+      div.green {
+        border: solid 2px green;
+        float: right;
+      }
+      div.blue {
+        background: blue;
+        /* 清除浮动 清除左侧浮动 取决于上一个元素浮动的方向*/
+        /* clear:left; */
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="red"></div>
+      <!-- <div class="green"></div> -->
+      <div class="blue"></div>
+    </main>
+  </body>
+</html>

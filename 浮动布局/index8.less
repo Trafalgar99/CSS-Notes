@@ -1,0 +1,28 @@
+p {
+  border: solid 1px #ddd;
+  padding: 10px;
+  overflow: hidden;
+  span.shape {
+    width: 100px;
+    height: 100px;
+    float: left;
+    padding: 30px;
+    // border: solid 20px red;
+    background: red;
+    margin: 30px;
+
+    // 环绕方式 border-box padding-box content-box margin-box
+    // shape-outside: border-box;
+    // 浮动区域显示形状 大小 圆心位置
+    // clip-path: circle(50% at 100% 0);
+    // 椭圆
+    // clip-path: ellipse(50% 100%);
+    // 多边形  需要每个点的坐标
+    clip-path: polygon(50% 0, 100% 100%, 0 100%);
+
+    // 环绕方式 按照形状环绕
+    shape-outside: polygon(50% 0, 100% 100%, 0 100%);
+    // 环绕方式 随图片环绕  仅限于有透明度的png图片
+    shape-outside: url(##);
+  }
+}

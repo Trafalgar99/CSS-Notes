@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 清除浮动 */
+      .clearfix {
+        clear: both;
+      }
+      main {
+        border: solid 1px black;
+        /* 子元素浮动后，父元素就感知不到其存在 */
+        /* 强制设置宽高并不灵活 */
+        height: 220px;
+        width: 600px;
+        margin: 0 auto;
+        /* 浮动元素无法逾越父元素的内边框 */
+        padding: 20px;
+      }
+      span {
+        border: solid black 1px;
+        /* 行级元素设置宽高不起作用 */
+        width: 300px;
+        /* 浮动后起作用  会自动变成块级元素*/
+        float: left;
+      }
+      span:nth-of-type(2) {
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <main><span>Trafal</span> <span>frank</span></main>
+  </body>
+</html>
