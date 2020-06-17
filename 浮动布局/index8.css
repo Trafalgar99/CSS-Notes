@@ -8,8 +8,9 @@ p span.shape {
   height: 100px;
   float: left;
   padding: 30px;
-  border: solid 20px red;
+  background: red;
   margin: 30px;
-  shape-outside: border-box;
-  clip-path: circle(50% at 100% 0);
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  shape-outside: polygon(50% 0, 100% 100%, 0 100%);
+  shape-outside: url(##);
 }
