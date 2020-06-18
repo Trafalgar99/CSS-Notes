@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 滚动条对定位的影响 */
+      article {
+        border: solid 8px blueviolet;
+        width: 400px;
+        height: 400px;
+        margin: 100px;
+        position: relative;
+        /* 定位元素会随滚动条移动 */
+        overflow: scroll;
+      }
+      section {
+        height: 300px;
+        background: #ddd;
+      }
+      article div {
+        background: red;
+        width: 200px;
+        height: 200px;
+        bottom: 0;
+        left: 0;
+        margin-top: -100px;
+        margin-left: -100px;
+
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <section></section>
+      <div></div>
+    </article>
+  </body>
+</html>

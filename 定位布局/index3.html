@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 定位控制居中 */
+      article {
+        border: solid 8px blueviolet;
+        width: 400px;
+        height: 400px;
+        margin: 100px;
+        position: relative;
+      }
+      article div {
+        background: red;
+        width: 200px;
+        height: 200px;
+        /* 通过计算设置居中 */
+        /* left:100px;
+        top:100px; */
+        /* 半自适应 */
+        left: 50%;
+        top: 50%;
+        margin-top: -100px;
+        margin-left: -100px;
+
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <div></div>
+    </article>
+  </body>
+</html>

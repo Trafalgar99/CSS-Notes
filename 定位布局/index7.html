@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 粘性定位 */
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        padding-left: 100px;
+        padding-top: 100px;
+      }
+      article {
+        width: 400px;
+        height: 200px;
+        border: solid red 1px;
+        overflow: scroll;
+      }
+      article section {
+        padding-bottom: 100px;
+      }
+      article section:nth-of-type(even) h2 {
+        background-color: #333;
+      }
+      article section h2 {
+        background: blueviolet;
+        color: white;
+        /* 粘性定位 */
+        position: sticky;
+        top: 0;
+      }
+      /* 粘性定位 
+            同级时会叠加，非同级会把其他的顶走
+      */
+    </style>
+  </head>
+  <body>
+    <main>
+      <article>
+        <section>
+          <h2>trafal.com</h2>
+          <p>asfdsafsdfsadfsadfsafsdaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>

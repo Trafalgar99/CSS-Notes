@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      article {
+        border: solid 8px blueviolet;
+        width: 400px;
+        height: 400px;
+        margin: 100px;
+        position: relative;
+      }
+      div {
+        background: red;
+        /* width: 200px;
+            height: 200px; */
+        position: absolute;
+        /* 如果没有设置宽高而设置定位，元素尺寸会跟定位属性相适应 */
+        left: 100px;
+        right: 100px;
+        right: 0;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 通过定位设置宽高 -->
+    <article>
+      <div></div>
+    </article>
+  </body>
+</html>
