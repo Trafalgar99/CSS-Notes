@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        padding-left: 50px;
+        padding-top: 15px;
+      }
+      article {
+        border: solid 5px silver;
+        width: 400px;
+        display: flex;
+        height: 500px;
+      }
+      article div:nth-child(1) {
+        flex-shrink: 0;
+      }
+      article div:nth-child(2) {
+        flex-shrink: 2;
+      }
+      article div:nth-child(3) {
+        flex-shrink: 3;
+
+        /* 设置顺序 */
+        order: -1;
+      }
+      article div {
+        /* 当宽度不够时不缩小 */
+        /* 也可以控制缩小的比例 */
+        flex-shrink: 0;
+
+        /* 设置主轴的基准尺寸，改尺寸控制主轴的长度，其优先级高于普通的宽高度设置,低于最大，最小宽高度 */
+        /* flex-basis: 100px; */
+
+        /* 组合属性  ->  flex: (flex-grow) (flex-shrink) (flex-basis)*/
+
+        width: 100px;
+        height: 100px;
+        background: blueviolet;
+        /* margin: 10px; */
+        padding: 10px;
+        background-clip: content-box;
+        box-sizing: border-box;
+        font-size: 35px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </article>
+  </body>
+</html>

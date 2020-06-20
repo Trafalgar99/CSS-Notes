@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      article {
+        border: solid 5px silver;
+        width: 400px;
+        height: 500px;
+        padding: 10px;
+        /* 对文本节点做弹性布局 */
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      /* 弹性布局对绝对定位无影响，对相对定位有影响 */
+    </style>
+  </head>
+  <body>
+    <article>
+      Trafal
+      <div>dsf</div>
+      asdfads
+    </article>
+  </body>
+</html>

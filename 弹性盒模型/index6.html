@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        padding-left: 50px;
+        padding-top: 15px;
+      }
+      article {
+        border: solid 5px silver;
+        width: 550px;
+        height: 250px;
+        display: flex;
+        /* flex-direction: row; */
+        flex-direction: column;
+        /* 设置主轴内容的对齐方式 */
+        /* justify-content: flex-start; */
+        /* justify-content: flex-end; */
+        /* justify-content: center; */
+        /* 左右靠边，平均分配 */
+        justify-content: space-evenly;
+        /* 左右相等间距，平均分配 */
+        justify-content: space-around;
+        /* 完全平均分配 */
+        justify-content: space-evenly;
+
+        /* 设置交叉轴的对齐方式 */
+        /* align-items: center; */
+        /* 使元素拉伸来适应交叉轴的高度 (仅限于没有设置元素的高度)*/
+        /* align-items: stretch; */
+
+        /* 设置水平垂直全局中 */
+        /* justify-content: center; */
+        /* align-items: center; */
+
+        /* 多行元素在交叉轴上的排列方式 */
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+      }
+      article div {
+        width: 100px;
+        height: 100px;
+        background: blueviolet;
+        /* margin: 10px; */
+        padding: 10px;
+        /* background-clip: content-box; */
+        box-sizing: border-box;
+        font-size: 35px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </article>
+  </body>
+</html>

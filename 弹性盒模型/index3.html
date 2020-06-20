@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+      }
+      main {
+        background: #ddd;
+        flex: 1;
+      }
+      footer {
+        background: linear-gradient(to bottom, #f3f3f3, #ccc, #f3f3f3);
+        height: 50px;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      footer div {
+        flex: 1;
+        text-align: center;
+        line-height: 3em;
+        color: #555;
+      }
+      footer div:nth-child(n + 2) {
+        border-left: solid 1px #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <main>111</main>
+    <footer>
+      <div>Tra</div>
+      <div>Fal</div>
+      <div>Gar</div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        padding-left: 50px;
+        padding-top: 15px;
+      }
+      article {
+        border: solid 5px silver;
+        width: 550px;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+      }
+      /* 对某一个元素设置分配规则 */
+      div :nth-child(1) {
+        flex-grow: 0;
+      }
+      div :nth-child(2) {
+        flex-grow: 1;
+      }
+      div :nth-child(3) {
+        flex-grow: 3;
+      }
+      article div {
+        /* 对可用空间的分配 */
+        /* 每个元素平均分配 */
+        flex-grow: 1;
+
+        width: 100px;
+        height: 100px;
+        background: blueviolet;
+        /* margin: 10px; */
+        padding: 10px;
+        background-clip: content-box;
+        box-sizing: border-box;
+        font-size: 35px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </article>
+  </body>
+</html>
