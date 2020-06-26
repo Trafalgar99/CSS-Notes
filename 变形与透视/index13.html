@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        background: #2c3e50;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      main {
+        display: flex;
+        /* border: solid 5px silver; */
+        width: 200px;
+        height: 200px;
+        transform-style: preserve-3d;
+        transform: perspective(900px) rotateX(-45deg);
+        transition: 2s;
+        transform-origin: center center 100px;
+      }
+      div {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        background: #27ae60;
+        font-size: 4em;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform-origin: center center 100px;
+        opacity: 0.8;
+      }
+      body:hover main {
+        transform: rotateX(180deg) rotateY(150deg);
+      }
+      div:nth-child(1) {
+        transform: rotateY(90deg);
+        background: #e67e22;
+      }
+      div:nth-child(2) {
+        transform: rotateY(180deg);
+        background: #3498db;
+      }
+      div:nth-child(3) {
+        transform: rotateY(270deg);
+        background: #9b59b6;
+      }
+      div:nth-child(4) {
+        transform: rotateY(360deg);
+        background: #d35400;
+      }
+      div:nth-child(5) {
+        transform: rotateX(90deg);
+        transform-origin: top;
+        background: #c0392b;
+      }
+      div:nth-child(6) {
+        transform: rotateX(-90deg);
+        transform-origin: bottom;
+        background: #16a085;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+    </main>
+  </body>
+</html>

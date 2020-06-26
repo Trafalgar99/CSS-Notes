@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+      body {
+        background: #2c3e50;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+      }
+      nav {
+        width: 200px;
+        height: 200px;
+        background-color: #e74c3c;
+        border-radius: 50%;
+        position: relative;
+      }
+      nav::after {
+        content: "Trafal";
+        background: #e74c3c;
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3em;
+        color: white;
+        cursor: pointer;
+      }
+      nav:hover ul {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(1);
+        width: 300px;
+        height: 300px;
+      }
+      ul {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        width: 300px;
+        height: 300px;
+        /* background: black; */
+        transition: 0.6s;
+      }
+      li {
+        width: 80px;
+        height: 80px;
+        background: #e74c3c;
+        border-radius: 50%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.5em;
+        color: white;
+        transition: 1s;
+        transform-origin: 150px 150px;
+        cursor: pointer;
+      }
+      nav li span {
+        transition: 1s;
+      }
+      nav:hover li:nth-child(1) {
+        transform: rotate(40deg);
+      }
+      nav:hover li:nth-child(1) span {
+        transform: rotate(320deg);
+      }
+      nav:hover li:nth-child(2) {
+        transform: rotate(80deg);
+      }
+      nav:hover li:nth-child(2) span {
+        transform: rotate(640deg);
+      }
+      nav:hover li:nth-child(3) {
+        transform: rotate(120deg);
+      }
+      nav:hover li:nth-child(3) span {
+        transform: rotate(960deg);
+      }
+      nav:hover li:nth-child(4) {
+        transform: rotate(160deg);
+      }
+      nav:hover li:nth-child(4) span {
+        transform: rotate(1280deg);
+      }
+      nav:hover li:nth-child(5) {
+        transform: rotate(200deg);
+      }
+      nav:hover li:nth-child(5) span {
+        transform: rotate(1600deg);
+      }
+      nav:hover li:nth-child(6) {
+        transform: rotate(240deg);
+      }
+      nav:hover li:nth-child(6) span {
+        transform: rotate(1920deg);
+      }
+      nav:hover li:nth-child(7) {
+        transform: rotate(280deg);
+      }
+      nav:hover li:nth-child(7) span {
+        transform: rotate(2240deg);
+      }
+      nav:hover li:nth-child(8) {
+        transform: rotate(320deg);
+      }
+      nav:hover li:nth-child(8) span {
+        transform: rotate(2560deg);
+      }
+      nav:hover li:nth-child(9) {
+        transform: rotate(360deg);
+      }
+      nav:hover li:nth-child(9) span {
+        transform: rotate(3240deg);
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <span><i class="fa fa-coffee" aria-hidden="true"></i></span>
+        </li>
+        <li>
+          <span><i class="fa fa-angellist" aria-hidden="true"></i></span>
+        </li>
+        <li>
+          <span><i class="fa fa-apple" aria-hidden="true"></i></span>
+        </li>
+        <li>
+          <span><i class="fa fa-archive" aria-hidden="true"></i></span>
+        </li>
+        <li>
+          <span><i class="fa fa-bitbucket" aria-hidden="true"></i></span>
+        </li>
+        <li>
+          <span><i class="fa fa-bomb" aria-hidden="true"></i></span>
+        </li>
+        <li>
+          <span><i class="fa fa-book" aria-hidden="true"></i></span>
+        </li>
+        <li>
+          <span><i class="fa fa-bus" aria-hidden="true"></i></span>
+        </li>
+        <li>
+          <span><i class="fa fa-camera" aria-hidden="true"></i></span>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
